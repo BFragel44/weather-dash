@@ -98,4 +98,3 @@ while True:
             st.header("Column 7")
         
         time.sleep(30)
-

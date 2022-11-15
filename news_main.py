@@ -1,4 +1,5 @@
 import requests
+import config
 
 def get_news():
 	url = "https://bing-news-search1.p.rapidapi.com/news"
@@ -6,7 +7,7 @@ def get_news():
 	querystring = {"textFormat":"Raw","safeSearch":"Off"}
 	headers = {
 		"X-BingApis-SDK": "true",
-		"X-RapidAPI-Key": "1a203b2425mshd9298026afebdd8p141b02jsn7b33458d4585",
+		"X-RapidAPI-Key": config.rapi,
 		"X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com"
 	}
 
